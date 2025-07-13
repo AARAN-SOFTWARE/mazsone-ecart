@@ -1,6 +1,6 @@
 ### Mazsone Ecart
 
-ecart
+Its a multi vendor web application 
 
 ### Installation
 
@@ -8,12 +8,7 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-```
-```bash
-bench get-app mazsone_ecart https://github.com/AARAN-SOFTWARE/mazsone-ecart.git
-```
-
-```bash
+bench get-app $URL_OF_THIS_REPO --branch develop
 bench install-app mazsone_ecart
 ```
 
