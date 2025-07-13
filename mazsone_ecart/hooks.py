@@ -4,6 +4,7 @@ app_publisher = "Aaran Software"
 app_description = "ecart"
 app_email = "info@aaransoftware.com"
 app_license = "mit"
+allow_rest_api = True
 
 # Apps
 # ------------------
