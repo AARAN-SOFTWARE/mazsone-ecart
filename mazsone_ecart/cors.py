@@ -3,7 +3,7 @@ import frappe
 def set_cors_headers():
     allowed_origins = [
         "http://localhost:5173",
-        "https://techmedia-beta.vercel.app/"       # example domain 2
+        "https://techmedia-beta.vercel.app"       # example domain 2
     ]
 
     origin = frappe.get_request_header("Origin")

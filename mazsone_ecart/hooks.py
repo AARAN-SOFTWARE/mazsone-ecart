@@ -5,7 +5,7 @@ app_description = "ecart"
 app_email = "info@aaransoftware.com"
 app_license = "mit"
 allow_rest_api = True
-before_request = ["mazsone_ecart.api.set_cors_headers"]
+before_request = ["mazsone_ecart.cors.set_cors_headers"]
 # Apps
 # ------------------
 
