@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:display_name",
+ "autoname": " ",
  "creation": "2025-07-13 10:48:10.412001",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,8 +10,8 @@
   "item_code",
   "item_name",
   "display_name",
+  "short_describe",
   "category",
-  "discount_for",
   "column_break_qpvn",
   "item_group",
   "stock_qty",
@@ -28,6 +28,7 @@
   "is_slider",
   "top_rated",
   "is_popular",
+  "is_discount",
   "section_break_kgit",
   "description"
  ],
@@ -40,6 +41,7 @@
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "label": "Product Image(default image)",
+   "make_attachment_public": 1,
    "options": "Attach Image"
   },
   {
@@ -61,13 +63,14 @@
    "fieldname": "category",
    "fieldtype": "Link",
    "label": "Category",
-   "options": "Category"
+   "options": "Item Group"
   },
   {
+   "fetch_from": "item_code.brand",
    "fieldname": "product_brand",
    "fieldtype": "Link",
    "label": "Brand",
-   "options": "Product Brand"
+   "options": "Brand"
   },
   {
    "default": "0",
@@ -86,11 +89,6 @@
    "fieldname": "top_rated",
    "fieldtype": "Check",
    "label": "Top rated"
-  },
-  {
-   "fieldname": "discount_for",
-   "fieldtype": "Data",
-   "label": "Discount for"
   },
   {
    "fieldname": "display_name",
@@ -114,24 +112,28 @@
    "fieldname": "image_2",
    "fieldtype": "Attach Image",
    "label": "Image 2",
+   "make_attachment_public": 1,
    "options": "Attach Image"
   },
   {
    "fieldname": "image_3",
    "fieldtype": "Attach Image",
    "label": "Image 3",
+   "make_attachment_public": 1,
    "options": "Attach Image"
   },
   {
    "fieldname": "image_4",
    "fieldtype": "Attach Image",
    "label": "Image 4",
+   "make_attachment_public": 1,
    "options": "Attach Image"
   },
   {
    "fieldname": "image_5",
    "fieldtype": "Attach Image",
    "label": "Image 5",
+   "make_attachment_public": 1,
    "options": "Attach Image"
   },
   {
@@ -161,16 +163,30 @@
    "fieldtype": "Data",
    "label": "Item Group",
    "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_discount",
+   "fieldtype": "Check",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "short_describe",
+   "fieldtype": "Data",
+   "label": "Short description",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-14 12:43:25.370435",
+ "max_attachments": 5,
+ "modified": "2025-07-14 17:02:00.186877",
  "modified_by": "Administrator",
  "module": "Product Management",
  "name": "Product",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -189,5 +205,6 @@
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "display_name"
 }
