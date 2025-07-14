@@ -2,7 +2,13 @@
 // For license information, please see license.txt
 
 // frappe.ui.form.on("Product", {
-// 	refresh(frm) {
-
+//     onload: (frm) => {
+//       		// should never check Private
+//       		frm.fields_dict["image"].df.is_private = 0;
 // 	},
 // });
+// frappe.ui.form.on('Website Item', {
+// 	onload: (frm) => {
+// 		// should never check Private
+// 		frm.fields_dict["website_image"].df.is_private = 0;
+// 	},
