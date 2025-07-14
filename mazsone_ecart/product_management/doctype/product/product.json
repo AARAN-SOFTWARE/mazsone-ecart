@@ -1,24 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:product_name",
+ "autoname": "field:display_name",
  "creation": "2025-07-13 10:48:10.412001",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_el2n",
-  "product_name",
-  "product_code",
-  "image",
+  "item_code",
+  "item_name",
+  "display_name",
+  "category",
+  "discount_for",
+  "column_break_qpvn",
+  "item_group",
+  "stock_qty",
   "price",
   "product_brand",
-  "stock_qty",
-  "category",
+  "section_break_aoyd",
+  "image",
+  "column_break_knrw",
+  "image_2",
+  "image_3",
+  "image_4",
+  "image_5",
+  "column_break_joaa",
   "is_slider",
-  "description",
-  "is_popular",
   "top_rated",
-  "discount_for"
+  "is_popular",
+  "section_break_kgit",
+  "description"
  ],
  "fields": [
   {
@@ -26,15 +37,9 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "product_name",
-   "fieldtype": "Data",
-   "label": "Product Name",
-   "unique": 1
-  },
-  {
    "fieldname": "image",
    "fieldtype": "Attach Image",
-   "label": "Product Image",
+   "label": "Product Image(default image)",
    "options": "Attach Image"
   },
   {
@@ -57,11 +62,6 @@
    "fieldtype": "Link",
    "label": "Category",
    "options": "Category"
-  },
-  {
-   "fieldname": "product_code",
-   "fieldtype": "Data",
-   "label": "Product Code"
   },
   {
    "fieldname": "product_brand",
@@ -91,12 +91,82 @@
    "fieldname": "discount_for",
    "fieldtype": "Data",
    "label": "Discount for"
+  },
+  {
+   "fieldname": "display_name",
+   "fieldtype": "Data",
+   "label": "Display name",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_qpvn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_aoyd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_knrw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_2",
+   "fieldtype": "Attach Image",
+   "label": "Image 2",
+   "options": "Attach Image"
+  },
+  {
+   "fieldname": "image_3",
+   "fieldtype": "Attach Image",
+   "label": "Image 3",
+   "options": "Attach Image"
+  },
+  {
+   "fieldname": "image_4",
+   "fieldtype": "Attach Image",
+   "label": "Image 4",
+   "options": "Attach Image"
+  },
+  {
+   "fieldname": "image_5",
+   "fieldtype": "Attach Image",
+   "label": "Image 5",
+   "options": "Attach Image"
+  },
+  {
+   "fieldname": "column_break_joaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kgit",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "unique": 1
+  },
+  {
+   "fetch_from": "item_code.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-14 10:49:22.788369",
+ "modified": "2025-07-14 12:43:25.370435",
  "modified_by": "Administrator",
  "module": "Product Management",
  "name": "Product",
