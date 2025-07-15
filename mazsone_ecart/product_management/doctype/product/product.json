@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": " ",
+ "autoname": "field:item_name",
  "creation": "2025-07-13 10:48:10.412001",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -30,12 +30,17 @@
   "is_popular",
   "is_discount",
   "section_break_kgit",
-  "description"
+  "description",
+  "seo_details_section",
+  "slug",
+  "meta_title",
+  "meta_describe"
  ],
  "fields": [
   {
    "fieldname": "section_break_el2n",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "image",
@@ -63,10 +68,9 @@
    "fieldname": "category",
    "fieldtype": "Link",
    "label": "Category",
-   "options": "Item Group"
+   "options": "Category"
   },
   {
-   "fetch_from": "item_code.brand",
    "fieldname": "product_brand",
    "fieldtype": "Link",
    "label": "Brand",
@@ -93,8 +97,7 @@
   {
    "fieldname": "display_name",
    "fieldtype": "Data",
-   "label": "Display name",
-   "unique": 1
+   "label": "Display name"
   },
   {
    "fieldname": "column_break_qpvn",
@@ -102,7 +105,8 @@
   },
   {
    "fieldname": "section_break_aoyd",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Attach"
   },
   {
    "fieldname": "column_break_knrw",
@@ -162,7 +166,7 @@
    "fieldname": "item_group",
    "fieldtype": "Data",
    "label": "Item Group",
-   "unique": 1
+   "options": " "
   },
   {
    "default": "0",
@@ -173,8 +177,27 @@
   {
    "fieldname": "short_describe",
    "fieldtype": "Data",
-   "label": "Short description",
-   "unique": 1
+   "label": "Short description"
+  },
+  {
+   "fieldname": "seo_details_section",
+   "fieldtype": "Section Break",
+   "label": "SEO details"
+  },
+  {
+   "fieldname": "slug",
+   "fieldtype": "Data",
+   "label": "Slug"
+  },
+  {
+   "fieldname": "meta_title",
+   "fieldtype": "Data",
+   "label": "Meta title"
+  },
+  {
+   "fieldname": "meta_describe",
+   "fieldtype": "Small Text",
+   "label": "Meta Description"
   }
  ],
  "grid_page_length": 50,
@@ -182,11 +205,11 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2025-07-14 17:02:00.186877",
+ "modified": "2025-07-15 15:29:23.292942",
  "modified_by": "Administrator",
  "module": "Product Management",
  "name": "Product",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
