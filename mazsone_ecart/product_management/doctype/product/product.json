@@ -17,6 +17,8 @@
   "stock_qty",
   "price",
   "product_brand",
+  "product_offer",
+  "slider_offer",
   "section_break_aoyd",
   "image",
   "column_break_knrw",
@@ -198,6 +200,16 @@
    "fieldname": "meta_describe",
    "fieldtype": "Small Text",
    "label": "Meta Description"
+  },
+  {
+   "fieldname": "product_offer",
+   "fieldtype": "Int",
+   "label": "Product Offer"
+  },
+  {
+   "fieldname": "slider_offer",
+   "fieldtype": "Data",
+   "label": "Slider Offer"
   }
  ],
  "grid_page_length": 50,
@@ -205,7 +217,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2025-07-15 15:29:23.292942",
+ "modified": "2025-07-15 18:17:34.423342",
  "modified_by": "Administrator",
  "module": "Product Management",
  "name": "Product",
