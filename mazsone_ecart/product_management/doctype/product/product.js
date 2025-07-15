@@ -12,3 +12,8 @@
 // 		// should never check Private
 // 		frm.fields_dict["website_image"].df.is_private = 0;
 // 	},
+frappe.ui.form.on('Product', {
+  refresh: function(frm) {
+      // your logic here
+  }
+});
