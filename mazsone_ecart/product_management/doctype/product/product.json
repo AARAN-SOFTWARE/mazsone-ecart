@@ -199,7 +199,7 @@
   {
    "fieldname": "slug",
    "fieldtype": "Data",
-   "label": "Seo name(for URL)"
+   "label": "Seo name(Note: Enter keywords like \"hp, laptop, 16gb ram, ssd\")"
   },
   {
    "fieldname": "meta_title",
