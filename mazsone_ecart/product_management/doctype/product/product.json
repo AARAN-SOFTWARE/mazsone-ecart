@@ -37,6 +37,8 @@
   "description",
   "seo_details_section",
   "slug",
+  "seo_caption",
+  "seo_keywords",
   "meta_title",
   "meta_describe"
  ],
@@ -228,6 +230,17 @@
    "fieldname": "slider_discount",
    "fieldtype": "Data",
    "label": "Slider discount"
+  },
+  {
+   "fieldname": "seo_caption",
+   "fieldtype": "Data",
+   "label": "Seo Caption"
+  },
+  {
+   "fieldname": "seo_keywords",
+   "fieldtype": "Small Text",
+   "label": "Seo Keywords",
+   "placeholder": "\u201cEnter keywords like: hp, laptop, 16gb ram, ssd\u201d"
   }
  ],
  "grid_page_length": 50,
@@ -235,7 +248,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2025-07-16 13:16:03.939409",
+ "modified": "2025-07-16 13:33:53.584359",
  "modified_by": "Administrator",
  "module": "Product Management",
  "name": "Product",
